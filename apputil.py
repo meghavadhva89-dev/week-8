@@ -6,7 +6,7 @@ class MarkovText(object):
     def __init__(self, corpus, k=1):
         self.corpus = corpus
         self.k = k  # window size for k-word states
-        self.term_dict = None  # you'll need to build this
+        self.term_dict = None  # built by get_term_dict()
 
     def get_term_dict(self):
         """
